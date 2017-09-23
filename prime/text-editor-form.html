@@ -1,0 +1,860 @@
+<!--
+ * GenesisUI - Bootstrap 4 Admin Template
+ * @version v1.8.7
+ * @link https://genesisui.com
+ * Copyright (c) 2017 creativeLabs Łukasz Holeczek
+ * @license Commercial
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Prime - Bootstrap 4 Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard,Vue,Vue.js,React,React.js">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Prime - Bootstrap 4 Admin Template</title>
+
+    <!-- Icons -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/simple-line-icons.min.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+  // Header options
+  1. '.header-fixed'					- Fixed Header
+
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'			  - Compact Sidebar
+
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+  // Breadcrumb options
+  1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+  // Footer options
+  1. 'footer-fixed'						- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+        <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">&#9776;</button>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">&#9776;</button>
+        <ul class="nav navbar-nav d-md-down-none">
+
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Settings</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-bell"></i>
+                    <span class="badge badge-pill badge-danger">5</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 5 notifications</strong>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                        <i class="icon-user-follow text-success"></i> New user registered
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="icon-user-unfollow text-danger"></i> User deleted
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="icon-chart text-info"></i> Sales report is ready
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="icon-basket-loaded text-primary"></i> New client
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="icon-speedometer text-warning"></i> Server overloaded
+                    </a>
+                    <div class="dropdown-header text-center">
+                        <strong>Server</strong>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                        <div class="text-uppercase mb-1">
+                            <small><b>CPU Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="text-uppercase mb-1">
+                            <small><b>Memory Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">11444GB/16384MB</small>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="text-uppercase mb-1">
+                            <small><b>SSD 1 Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">243GB/256GB</small>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-list"></i>
+                    <span class="badge badge-pill badge-warning">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 5 pending tasks</strong>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                        <div class="small mb-1">Upgrade NPM &amp; Bower
+                            <span class="float-right">
+                                <strong>0%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="small mb-1">ReactJS Version
+                            <span class="float-right">
+                                <strong>25%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="small mb-1">VueJS Version
+                            <span class="float-right">
+                                <strong>50%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="small mb-1">Add new layouts
+                            <span class="float-right">
+                                <strong>75%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="small mb-1">Angular 2 Cli Version
+                            <span class="float-right">
+                                <strong>100%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a href="#" class="dropdown-item text-center">
+                        <strong>View all tasks</strong>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-envelope-letter"></i>
+                    <span class="badge badge-pill badge-info">7</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 4 messages</strong>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-success"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">Just now</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">
+                                <span class="fa fa-exclamation text-danger"></span>Important message</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img src="images/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-warning"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">5 minutes ago</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img src="images/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-danger"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">1:52 PM</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img src="images/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-info"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">4:03 PM</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item text-center">
+                        <strong>View all messages</strong>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <span class="d-md-down-none">admin</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header text-center">
+                        <strong>Account</strong>
+                    </div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+                    <div class="dropdown-header text-center">
+                        <strong>Settings</strong>
+                    </div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-dark">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+                    <div class="divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                </div>
+            </li>
+            <button class="navbar-toggler aside-menu-toggler" type="button">&#9776;</button>
+
+        </ul>
+    </header>
+
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-title">
+                        UI Elements
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/buttons.html"><i class="icon-puzzle"></i> Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/social-buttons.html"><i class="icon-puzzle"></i> Social Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/cards.html"><i class="icon-puzzle"></i> Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/modals.html"><i class="icon-puzzle"></i> Modals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/switches.html"><i class="icon-puzzle"></i> Switches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/tables.html"><i class="icon-puzzle"></i> Tables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="components/tabs.html"><i class="icon-puzzle"></i> Tabs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-note"></i> Forms</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/basic-forms.html"><i class="icon-note"></i> Basic Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/advanced-forms.html"><i class="icon-note"></i> Advanced Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/validation.html"><i class="icon-note"></i> Validation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/text-editors.html"><i class="icon-note"></i> Text Editors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Icons</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/font-awesome.html"><i class="icon-star"></i> Font Awesome <span class="badge badge-secondary">4.7</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/simple-line-icons.html"><i class="icon-star"></i> Simple Line Icons</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-energy"></i> Plugins</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/calendar.html"><i class="icon-calendar"></i> Calendar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/draggable-cards.html"><i class="icon-cursor-move"></i> Draggable Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/loading-buttons.html"><i class="icon-cursor"></i> Loading Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/notifications.html"><i class="icon-info"></i> Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/sliders.html"><i class="icon-equalizer"></i> Sliders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/spinners.html"><i class="fa fa-spinner"></i> Spinners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/tables.html"><i class="icon-list"></i> Tables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> Charts</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-title">
+                        Extras
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Pages</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="views/pages/login.html" target="_top"><i class="icon-star"></i> Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="views/pages/register.html" target="_top"><i class="icon-star"></i> Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="views/pages/404.html" target="_top"><i class="icon-star"></i> Error 404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="views/pages/500.html" target="_top"><i class="icon-star"></i> Error 500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-layers"></i> UI Kits</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Invoicing</a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="UIkits/invoicing/invoice.html"><i class="icon-speech"></i> Invoice</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Email</a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="UIkits/email/inbox.html"><i class="icon-speech"></i> Inbox</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="UIkits/email/message.html"><i class="icon-speech"></i> Message</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="UIkits/email/compose.html"><i class="icon-speech"></i> Compose</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider m-2"></li>
+                    <li class="nav-title">
+                        Labels
+                    </li>
+                    <li class="nav-item hidden-cn">
+                        <a class="nav-label" href="#"><i class="fa fa-circle text-danger"></i> Label danger</a>
+                    </li>
+                    <li class="nav-item hidden-cn">
+                        <a class="nav-label" href="#"><i class="fa fa-circle text-info"></i> Label info</a>
+                    </li>
+                    <li class="nav-item hidden-cn">
+                        <a class="nav-label" href="#"><i class="fa fa-circle text-warning"></i> Label warning</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-title">
+                        System Utilization
+                    </li>
+                    <li class="nav-item px-3 hidden-cn">
+                        <div class="text-uppercase mb-1">
+                            <small><b>CPU Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                    </li>
+                    <li class="nav-item px-3 hidden-cn">
+                        <div class="text-uppercase mb-1">
+                            <small><b>Memory Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">11444GB/16384MB</small>
+                    </li>
+                    <li class="nav-item px-3 hidden-cn">
+                        <div class="text-uppercase mb-1">
+                            <small><b>SSD 1 Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">243GB/256GB</small>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <main class="main">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item"><a href="#">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">Dashboard</li>
+
+                <!-- Breadcrumb Menu-->
+                <li class="breadcrumb-menu d-md-down-none">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <a class="btn" href="#"><i class="icon-speech"></i></a>
+                        <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                        <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                    </div>
+                </li>
+            </ol>
+
+
+            <div class="container-fluid">
+                <div id="ui-view" style="opacity: 1;"><script>
+    var requireJS = [
+      "vendors/js/quill.min.js"
+    ];
+
+    loadJS(requireJS, "js/views/text-editors.js");
+</script>
+
+<div class="animated fadeIn">
+    <div class="card">
+        <div class="card-header">Quill - modern rich text editor</div>
+        <div class="card-body">
+            <!-- Create toolbar & editor container -->
+            <div class="ql-toolbar ql-snow"><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button><button type="button" class="ql-strike"><svg viewBox="0 0 18 18"> <line class="ql-stroke ql-thin" x1="15.5" x2="2.5" y1="8.5" y2="9.5"></line> <path class="ql-fill" d="M9.007,8C6.542,7.791,6,7.519,6,6.5,6,5.792,7.283,5,9,5c1.571,0,2.765.679,2.969,1.309a1,1,0,0,0,1.9-.617C13.356,4.106,11.354,3,9,3,6.2,3,4,4.538,4,6.5a3.2,3.2,0,0,0,.5,1.843Z"></path> <path class="ql-fill" d="M8.984,10C11.457,10.208,12,10.479,12,11.5c0,0.708-1.283,1.5-3,1.5-1.571,0-2.765-.679-2.969-1.309a1,1,0,1,0-1.9.617C4.644,13.894,6.646,15,9,15c2.8,0,5-1.538,5-3.5a3.2,3.2,0,0,0-.5-1.843Z"></path> </svg></button></span><span class="ql-formats"><button type="button" class="ql-blockquote"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span><span class="ql-formats"><button type="button" class="ql-header" value="1"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="14"></line> <line class="ql-stroke" x1="11" x2="11" y1="4" y2="14"></line> <line class="ql-stroke" x1="11" x2="3" y1="9" y2="9"></line> <line class="ql-stroke ql-thin" x1="13.5" x2="15.5" y1="14.5" y2="14.5"></line> <path class="ql-fill" d="M14.5,15a0.5,0.5,0,0,1-.5-0.5V12.085l-0.276.138A0.5,0.5,0,0,1,13.053,12c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,15,11.5v3A0.5,0.5,0,0,1,14.5,15Z"></path> </svg></button><button type="button" class="ql-header" value="2"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="14"></line> <line class="ql-stroke" x1="11" x2="11" y1="4" y2="14"></line> <line class="ql-stroke" x1="11" x2="3" y1="9" y2="9"></line> <path class="ql-stroke ql-thin" d="M15.5,14.5h-2c0-.234,1.85-1.076,1.85-2.234a0.959,0.959,0,0,0-1.85-.109"></path> </svg></button></span><span class="ql-formats"><button type="button" class="ql-list" value="ordered"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button><button type="button" class="ql-list" value="bullet"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button></span><span class="ql-formats"><button type="button" class="ql-script" value="sub"><svg viewBox="0 0 18 18"> <path class="ql-fill" d="M15.5,15H13.861a3.858,3.858,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.921,1.921,0,0,0,12.021,11.7a0.50013,0.50013,0,1,0,.957.291h0a0.914,0.914,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.076-1.16971,1.86982-1.93971,2.43082A1.45639,1.45639,0,0,0,12,15.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,15Z"></path> <path class="ql-fill" d="M9.65,5.241a1,1,0,0,0-1.409.108L6,7.964,3.759,5.349A1,1,0,0,0,2.192,6.59178Q2.21541,6.6213,2.241,6.649L4.684,9.5,2.241,12.35A1,1,0,0,0,3.71,13.70722q0.02557-.02768.049-0.05722L6,11.036,8.241,13.65a1,1,0,1,0,1.567-1.24277Q9.78459,12.3777,9.759,12.35L7.316,9.5,9.759,6.651A1,1,0,0,0,9.65,5.241Z"></path> </svg></button><button type="button" class="ql-script" value="super"><svg viewBox="0 0 18 18"> <path class="ql-fill" d="M15.5,7H13.861a4.015,4.015,0,0,0,1.914-2.975,1.8,1.8,0,0,0-1.6-1.751A1.922,1.922,0,0,0,12.021,3.7a0.5,0.5,0,1,0,.957.291,0.917,0.917,0,0,1,1.053-.725,0.81,0.81,0,0,1,.744.762c0,1.077-1.164,1.925-1.934,2.486A1.423,1.423,0,0,0,12,7.5a0.5,0.5,0,0,0,.5.5h3A0.5,0.5,0,0,0,15.5,7Z"></path> <path class="ql-fill" d="M9.651,5.241a1,1,0,0,0-1.41.108L6,7.964,3.759,5.349a1,1,0,1,0-1.519,1.3L4.683,9.5,2.241,12.35a1,1,0,1,0,1.519,1.3L6,11.036,8.241,13.65a1,1,0,0,0,1.519-1.3L7.317,9.5,9.759,6.651A1,1,0,0,0,9.651,5.241Z"></path> </svg></button></span><span class="ql-formats"><button type="button" class="ql-indent" value="-1"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="9" x2="15" y1="9" y2="9"></line> <polyline class="ql-stroke" points="5 7 5 11 3 9 5 7"></polyline> </svg></button><button type="button" class="ql-indent" value="+1"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="9" x2="15" y1="9" y2="9"></line> <polyline class="ql-fill ql-stroke" points="3 7 3 11 5 9 3 7"></polyline> </svg></button></span><span class="ql-formats"><button type="button" class="ql-direction" value="rtl"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke ql-fill" points="3 11 5 9 3 7 3 11"></polygon> <line class="ql-stroke ql-fill" x1="15" x2="11" y1="4" y2="4"></line> <path class="ql-fill" d="M11,3a3,3,0,0,0,0,6h1V3H11Z"></path> <rect class="ql-fill" height="11" width="1" x="11" y="4"></rect> <rect class="ql-fill" height="11" width="1" x="13" y="4"></rect> </svg><svg viewBox="0 0 18 18"> <polygon class="ql-stroke ql-fill" points="15 12 13 10 15 8 15 12"></polygon> <line class="ql-stroke ql-fill" x1="9" x2="5" y1="4" y2="4"></line> <path class="ql-fill" d="M5,3A3,3,0,0,0,5,9H6V3H5Z"></path> <rect class="ql-fill" height="11" width="1" x="5" y="4"></rect> <rect class="ql-fill" height="11" width="1" x="7" y="4"></rect> </svg></button></span><span class="ql-formats"><span class="ql-size ql-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options"><span class="ql-picker-item" data-value="small"></span><span class="ql-picker-item"></span><span class="ql-picker-item" data-value="large"></span><span class="ql-picker-item" data-value="huge"></span></span></span><select class="ql-size" style="display: none;"><option value="small"></option><option selected="selected"></option><option value="large"></option><option value="huge"></option></select></span><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options"><span class="ql-picker-item" data-value="1"></span><span class="ql-picker-item" data-value="2"></span><span class="ql-picker-item" data-value="3"></span><span class="ql-picker-item" data-value="4"></span><span class="ql-picker-item" data-value="5"></span><span class="ql-picker-item" data-value="6"></span><span class="ql-picker-item"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option value="3"></option><option value="4"></option><option value="5"></option><option value="6"></option><option selected="selected"></option></select></span><span class="ql-formats"><span class="ql-color ql-picker ql-color-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <line class="ql-color-label ql-stroke ql-transparent" x1="3" x2="15" y1="15" y2="15"></line> <polyline class="ql-stroke" points="5.5 11 9 3 12.5 11"></polyline> <line class="ql-stroke" x1="11.63" x2="6.38" y1="9" y2="9"></line> </svg></span><span class="ql-picker-options"><span class="ql-picker-item ql-primary"></span><span class="ql-picker-item ql-primary" data-value="#e60000" style="background-color: rgb(230, 0, 0);"></span><span class="ql-picker-item ql-primary" data-value="#ff9900" style="background-color: rgb(255, 153, 0);"></span><span class="ql-picker-item ql-primary" data-value="#ffff00" style="background-color: rgb(255, 255, 0);"></span><span class="ql-picker-item ql-primary" data-value="#008a00" style="background-color: rgb(0, 138, 0);"></span><span class="ql-picker-item ql-primary" data-value="#0066cc" style="background-color: rgb(0, 102, 204);"></span><span class="ql-picker-item ql-primary" data-value="#9933ff" style="background-color: rgb(153, 51, 255);"></span><span class="ql-picker-item" data-value="#ffffff" style="background-color: rgb(255, 255, 255);"></span><span class="ql-picker-item" data-value="#facccc" style="background-color: rgb(250, 204, 204);"></span><span class="ql-picker-item" data-value="#ffebcc" style="background-color: rgb(255, 235, 204);"></span><span class="ql-picker-item" data-value="#ffffcc" style="background-color: rgb(255, 255, 204);"></span><span class="ql-picker-item" data-value="#cce8cc" style="background-color: rgb(204, 232, 204);"></span><span class="ql-picker-item" data-value="#cce0f5" style="background-color: rgb(204, 224, 245);"></span><span class="ql-picker-item" data-value="#ebd6ff" style="background-color: rgb(235, 214, 255);"></span><span class="ql-picker-item" data-value="#bbbbbb" style="background-color: rgb(187, 187, 187);"></span><span class="ql-picker-item" data-value="#f06666" style="background-color: rgb(240, 102, 102);"></span><span class="ql-picker-item" data-value="#ffc266" style="background-color: rgb(255, 194, 102);"></span><span class="ql-picker-item" data-value="#ffff66" style="background-color: rgb(255, 255, 102);"></span><span class="ql-picker-item" data-value="#66b966" style="background-color: rgb(102, 185, 102);"></span><span class="ql-picker-item" data-value="#66a3e0" style="background-color: rgb(102, 163, 224);"></span><span class="ql-picker-item" data-value="#c285ff" style="background-color: rgb(194, 133, 255);"></span><span class="ql-picker-item" data-value="#888888" style="background-color: rgb(136, 136, 136);"></span><span class="ql-picker-item" data-value="#a10000" style="background-color: rgb(161, 0, 0);"></span><span class="ql-picker-item" data-value="#b26b00" style="background-color: rgb(178, 107, 0);"></span><span class="ql-picker-item" data-value="#b2b200" style="background-color: rgb(178, 178, 0);"></span><span class="ql-picker-item" data-value="#006100" style="background-color: rgb(0, 97, 0);"></span><span class="ql-picker-item" data-value="#0047b2" style="background-color: rgb(0, 71, 178);"></span><span class="ql-picker-item" data-value="#6b24b2" style="background-color: rgb(107, 36, 178);"></span><span class="ql-picker-item" data-value="#444444" style="background-color: rgb(68, 68, 68);"></span><span class="ql-picker-item" data-value="#5c0000" style="background-color: rgb(92, 0, 0);"></span><span class="ql-picker-item" data-value="#663d00" style="background-color: rgb(102, 61, 0);"></span><span class="ql-picker-item" data-value="#666600" style="background-color: rgb(102, 102, 0);"></span><span class="ql-picker-item" data-value="#003700" style="background-color: rgb(0, 55, 0);"></span><span class="ql-picker-item" data-value="#002966" style="background-color: rgb(0, 41, 102);"></span><span class="ql-picker-item" data-value="#3d1466" style="background-color: rgb(61, 20, 102);"></span></span></span><select class="ql-color" style="display: none;"><option selected="selected"></option><option value="#e60000"></option><option value="#ff9900"></option><option value="#ffff00"></option><option value="#008a00"></option><option value="#0066cc"></option><option value="#9933ff"></option><option value="#ffffff"></option><option value="#facccc"></option><option value="#ffebcc"></option><option value="#ffffcc"></option><option value="#cce8cc"></option><option value="#cce0f5"></option><option value="#ebd6ff"></option><option value="#bbbbbb"></option><option value="#f06666"></option><option value="#ffc266"></option><option value="#ffff66"></option><option value="#66b966"></option><option value="#66a3e0"></option><option value="#c285ff"></option><option value="#888888"></option><option value="#a10000"></option><option value="#b26b00"></option><option value="#b2b200"></option><option value="#006100"></option><option value="#0047b2"></option><option value="#6b24b2"></option><option value="#444444"></option><option value="#5c0000"></option><option value="#663d00"></option><option value="#666600"></option><option value="#003700"></option><option value="#002966"></option><option value="#3d1466"></option></select><span class="ql-background ql-picker ql-color-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <g class="ql-fill ql-color-label"> <polygon points="6 6.868 6 6 5 6 5 7 5.942 7 6 6.868"></polygon> <rect height="1" width="1" x="4" y="4"></rect> <polygon points="6.817 5 6 5 6 6 6.38 6 6.817 5"></polygon> <rect height="1" width="1" x="2" y="6"></rect> <rect height="1" width="1" x="3" y="5"></rect> <rect height="1" width="1" x="4" y="7"></rect> <polygon points="4 11.439 4 11 3 11 3 12 3.755 12 4 11.439"></polygon> <rect height="1" width="1" x="2" y="12"></rect> <rect height="1" width="1" x="2" y="9"></rect> <rect height="1" width="1" x="2" y="15"></rect> <polygon points="4.63 10 4 10 4 11 4.192 11 4.63 10"></polygon> <rect height="1" width="1" x="3" y="8"></rect> <path d="M10.832,4.2L11,4.582V4H10.708A1.948,1.948,0,0,1,10.832,4.2Z"></path> <path d="M7,4.582L7.168,4.2A1.929,1.929,0,0,1,7.292,4H7V4.582Z"></path> <path d="M8,13H7.683l-0.351.8a1.933,1.933,0,0,1-.124.2H8V13Z"></path> <rect height="1" width="1" x="12" y="2"></rect> <rect height="1" width="1" x="11" y="3"></rect> <path d="M9,3H8V3.282A1.985,1.985,0,0,1,9,3Z"></path> <rect height="1" width="1" x="2" y="3"></rect> <rect height="1" width="1" x="6" y="2"></rect> <rect height="1" width="1" x="3" y="2"></rect> <rect height="1" width="1" x="5" y="3"></rect> <rect height="1" width="1" x="9" y="2"></rect> <rect height="1" width="1" x="15" y="14"></rect> <polygon points="13.447 10.174 13.469 10.225 13.472 10.232 13.808 11 14 11 14 10 13.37 10 13.447 10.174"></polygon> <rect height="1" width="1" x="13" y="7"></rect> <rect height="1" width="1" x="15" y="5"></rect> <rect height="1" width="1" x="14" y="6"></rect> <rect height="1" width="1" x="15" y="8"></rect> <rect height="1" width="1" x="14" y="9"></rect> <path d="M3.775,14H3v1H4V14.314A1.97,1.97,0,0,1,3.775,14Z"></path> <rect height="1" width="1" x="14" y="3"></rect> <polygon points="12 6.868 12 6 11.62 6 12 6.868"></polygon> <rect height="1" width="1" x="15" y="2"></rect> <rect height="1" width="1" x="12" y="5"></rect> <rect height="1" width="1" x="13" y="4"></rect> <polygon points="12.933 9 13 9 13 8 12.495 8 12.933 9"></polygon> <rect height="1" width="1" x="9" y="14"></rect> <rect height="1" width="1" x="8" y="15"></rect> <path d="M6,14.926V15H7V14.316A1.993,1.993,0,0,1,6,14.926Z"></path> <rect height="1" width="1" x="5" y="15"></rect> <path d="M10.668,13.8L10.317,13H10v1h0.792A1.947,1.947,0,0,1,10.668,13.8Z"></path> <rect height="1" width="1" x="11" y="15"></rect> <path d="M14.332,12.2a1.99,1.99,0,0,1,.166.8H15V12H14.245Z"></path> <rect height="1" width="1" x="14" y="15"></rect> <rect height="1" width="1" x="15" y="11"></rect> </g> <polyline class="ql-stroke" points="5.5 13 9 5 12.5 13"></polyline> <line class="ql-stroke" x1="11.63" x2="6.38" y1="11" y2="11"></line> </svg></span><span class="ql-picker-options"><span class="ql-picker-item ql-primary" data-value="#000000" style="background-color: rgb(0, 0, 0);"></span><span class="ql-picker-item ql-primary" data-value="#e60000" style="background-color: rgb(230, 0, 0);"></span><span class="ql-picker-item ql-primary" data-value="#ff9900" style="background-color: rgb(255, 153, 0);"></span><span class="ql-picker-item ql-primary" data-value="#ffff00" style="background-color: rgb(255, 255, 0);"></span><span class="ql-picker-item ql-primary" data-value="#008a00" style="background-color: rgb(0, 138, 0);"></span><span class="ql-picker-item ql-primary" data-value="#0066cc" style="background-color: rgb(0, 102, 204);"></span><span class="ql-picker-item ql-primary" data-value="#9933ff" style="background-color: rgb(153, 51, 255);"></span><span class="ql-picker-item"></span><span class="ql-picker-item" data-value="#facccc" style="background-color: rgb(250, 204, 204);"></span><span class="ql-picker-item" data-value="#ffebcc" style="background-color: rgb(255, 235, 204);"></span><span class="ql-picker-item" data-value="#ffffcc" style="background-color: rgb(255, 255, 204);"></span><span class="ql-picker-item" data-value="#cce8cc" style="background-color: rgb(204, 232, 204);"></span><span class="ql-picker-item" data-value="#cce0f5" style="background-color: rgb(204, 224, 245);"></span><span class="ql-picker-item" data-value="#ebd6ff" style="background-color: rgb(235, 214, 255);"></span><span class="ql-picker-item" data-value="#bbbbbb" style="background-color: rgb(187, 187, 187);"></span><span class="ql-picker-item" data-value="#f06666" style="background-color: rgb(240, 102, 102);"></span><span class="ql-picker-item" data-value="#ffc266" style="background-color: rgb(255, 194, 102);"></span><span class="ql-picker-item" data-value="#ffff66" style="background-color: rgb(255, 255, 102);"></span><span class="ql-picker-item" data-value="#66b966" style="background-color: rgb(102, 185, 102);"></span><span class="ql-picker-item" data-value="#66a3e0" style="background-color: rgb(102, 163, 224);"></span><span class="ql-picker-item" data-value="#c285ff" style="background-color: rgb(194, 133, 255);"></span><span class="ql-picker-item" data-value="#888888" style="background-color: rgb(136, 136, 136);"></span><span class="ql-picker-item" data-value="#a10000" style="background-color: rgb(161, 0, 0);"></span><span class="ql-picker-item" data-value="#b26b00" style="background-color: rgb(178, 107, 0);"></span><span class="ql-picker-item" data-value="#b2b200" style="background-color: rgb(178, 178, 0);"></span><span class="ql-picker-item" data-value="#006100" style="background-color: rgb(0, 97, 0);"></span><span class="ql-picker-item" data-value="#0047b2" style="background-color: rgb(0, 71, 178);"></span><span class="ql-picker-item" data-value="#6b24b2" style="background-color: rgb(107, 36, 178);"></span><span class="ql-picker-item" data-value="#444444" style="background-color: rgb(68, 68, 68);"></span><span class="ql-picker-item" data-value="#5c0000" style="background-color: rgb(92, 0, 0);"></span><span class="ql-picker-item" data-value="#663d00" style="background-color: rgb(102, 61, 0);"></span><span class="ql-picker-item" data-value="#666600" style="background-color: rgb(102, 102, 0);"></span><span class="ql-picker-item" data-value="#003700" style="background-color: rgb(0, 55, 0);"></span><span class="ql-picker-item" data-value="#002966" style="background-color: rgb(0, 41, 102);"></span><span class="ql-picker-item" data-value="#3d1466" style="background-color: rgb(61, 20, 102);"></span></span></span><select class="ql-background" style="display: none;"><option value="#000000"></option><option value="#e60000"></option><option value="#ff9900"></option><option value="#ffff00"></option><option value="#008a00"></option><option value="#0066cc"></option><option value="#9933ff"></option><option selected="selected"></option><option value="#facccc"></option><option value="#ffebcc"></option><option value="#ffffcc"></option><option value="#cce8cc"></option><option value="#cce0f5"></option><option value="#ebd6ff"></option><option value="#bbbbbb"></option><option value="#f06666"></option><option value="#ffc266"></option><option value="#ffff66"></option><option value="#66b966"></option><option value="#66a3e0"></option><option value="#c285ff"></option><option value="#888888"></option><option value="#a10000"></option><option value="#b26b00"></option><option value="#b2b200"></option><option value="#006100"></option><option value="#0047b2"></option><option value="#6b24b2"></option><option value="#444444"></option><option value="#5c0000"></option><option value="#663d00"></option><option value="#666600"></option><option value="#003700"></option><option value="#002966"></option><option value="#3d1466"></option></select></span><span class="ql-formats"><span class="ql-font ql-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options"><span class="ql-picker-item"></span><span class="ql-picker-item" data-value="serif"></span><span class="ql-picker-item" data-value="monospace"></span></span></span><select class="ql-font" style="display: none;"><option selected="selected"></option><option value="serif"></option><option value="monospace"></option></select></span><span class="ql-formats"><span class="ql-align ql-picker ql-icon-picker"><span class="ql-picker-label"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="13" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="9" y1="4" y2="4"></line> </svg></span><span class="ql-picker-options"><span class="ql-picker-item"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="3" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="13" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="9" y1="4" y2="4"></line> </svg></span><span class="ql-picker-item" data-value="center"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="15" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="14" x2="4" y1="14" y2="14"></line> <line class="ql-stroke" x1="12" x2="6" y1="4" y2="4"></line> </svg></span><span class="ql-picker-item" data-value="right"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="15" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="15" x2="5" y1="14" y2="14"></line> <line class="ql-stroke" x1="15" x2="9" y1="4" y2="4"></line> </svg></span><span class="ql-picker-item" data-value="justify"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="15" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="15" x2="3" y1="14" y2="14"></line> <line class="ql-stroke" x1="15" x2="3" y1="4" y2="4"></line> </svg></span></span></span><select class="ql-align" style="display: none;"><option selected="selected"></option><option value="center"></option><option value="right"></option><option value="justify"></option></select></span><span class="ql-formats"><button type="button" class="ql-clean"><svg class="" viewBox="0 0 18 18"> <line class="ql-stroke" x1="5" x2="13" y1="3" y2="3"></line> <line class="ql-stroke" x1="6" x2="9.35" y1="12" y2="3"></line> <line class="ql-stroke" x1="11" x2="15" y1="11" y2="15"></line> <line class="ql-stroke" x1="15" x2="11" y1="11" y2="15"></line> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="7" x="2" y="14"></rect> </svg></button></span></div><div id="editor" class="ql-container ql-snow"><div class="ql-editor" data-gramm="false" contenteditable="true"><p><strong>Bootstrap</strong> is a <a href="/wiki/Free_and_open-source_software" target="_blank">free and open-source</a> front-end <a href="/wiki/Web_framework" target="_blank">web framework</a> for designing <a href="/wiki/Website" target="_blank">websites</a> and <a href="/wiki/Web_application" target="_blank">web applications</a>. It contains <a href="/wiki/HTML" target="_blank">HTML</a>- and <a href="/wiki/CSS" target="_blank">CSS</a>-based design templates for <a href="/wiki/Typography" target="_blank">typography</a>, forms, buttons, navigation and other interface components, as well as optional <a href="/wiki/JavaScript" target="_blank">JavaScript</a> extensions. Unlike many web frameworks, it concerns itself with <a href="/wiki/Front-end_web_development" target="_blank">front-end development</a> only.</p><p>Bootstrap is the second most-starred project on <a href="/wiki/GitHub" target="_blank">GitHub</a>, with more than 111,600 stars and 51,500 forks.<a href="#cite_note-most-starred-3" target="_blank"><sup>[3]</sup></a></p><p>Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at <a href="/wiki/Twitter" target="_blank">Twitter</a> as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to <a href="/wiki/Twitter" target="_blank">Twitter</a> developer Mark Otto:</p><blockquote>"A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company."<a href="#cite_note-bootstrap_a_list_apart-4" target="_blank"><sup>[4]</sup></a></blockquote><p>After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a <a href="/wiki/Hackathon" target="_blank">hackathon</a>-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.<a href="#cite_note-v1-release-5" target="_blank"><sup>[5]</sup></a> It has continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a large community of contributors.<a href="#cite_note-about-6" target="_blank"><sup>[6]</sup></a></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+        </div>
+    </div>
+</div>
+</div>
+            </div>
+            <!-- /.conainer-fluid -->
+        </main>
+
+        <aside class="aside-menu">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="timeline" role="tabpanel">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+                        <small><b>Today</b>
+                        </small>
+                    </div>
+                    <hr class="transparent mx-3 my-0">
+                    <div class="callout callout-warning m-0 py-3">
+                        <div class="avatar float-right">
+                            <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div>Meeting with
+                            <strong>Lucas</strong>
+                        </div>
+                        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                        <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                    </div>
+                    <hr class="mx-3 my-0">
+                    <div class="callout callout-info m-0 py-3">
+                        <div class="avatar float-right">
+                            <img src="images/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div>Skype with
+                            <strong>Megan</strong>
+                        </div>
+                        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
+                        <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line</small>
+                    </div>
+                    <hr class="transparent mx-3 my-0">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+                        <small><b>Tomorrow</b>
+                        </small>
+                    </div>
+                    <hr class="transparent mx-3 my-0">
+                    <div class="callout callout-danger m-0 py-3">
+                        <div>New UI Project -
+                            <strong>deadline</strong>
+                        </div>
+                        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
+                        <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                        <div class="avatars-stack mt-2">
+                            <div class="avatar avatar-xs">
+                                <img src="images/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mx-3 my-0">
+                    <div class="callout callout-success m-0 py-3">
+                        <div>
+                            <strong>#10 Startups.Garden</strong>Meetup</div>
+                        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                        <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                    </div>
+                    <hr class="mx-3 my-0">
+                    <div class="callout callout-primary m-0 py-3">
+                        <div>
+                            <strong>Team meeting</strong>
+                        </div>
+                        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
+                        <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                        <div class="avatars-stack mt-2">
+                            <div class="avatar avatar-xs">
+                                <img src="images/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div class="avatar avatar-xs">
+                                <img src="images/8.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mx-3 my-0">
+                </div>
+                <div class="tab-pane p-3" id="messages" role="tabpanel">
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img src="images/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                </div>
+                <div class="tab-pane p-3" id="settings" role="tabpanel">
+                    <h6>Settings</h6>
+
+                    <div class="aside-options">
+                        <div class="clearfix mt-4">
+                            <small><b>Option 1</b>
+                            </small>
+                            <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                                <input type="checkbox" class="switch-input" checked>
+                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                <span class="switch-handle"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                        </div>
+                    </div>
+
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small><b>Option 2</b>
+                            </small>
+                            <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                <span class="switch-handle"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                        </div>
+                    </div>
+
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small><b>Option 3</b>
+                            </small>
+                            <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                <span class="switch-handle"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small><b>Option 4</b>
+                            </small>
+                            <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                                <input type="checkbox" class="switch-input" checked>
+                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                <span class="switch-handle"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h6>System Utilization</h6>
+
+                    <div class="text-uppercase mb-1 mt-4">
+                        <small><b>CPU Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">348 Processes. 1/4 Cores.</small>
+
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small><b>Memory Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">11444GB/16384MB</small>
+
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small><b>SSD 1 Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">243GB/256GB</small>
+
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small><b>SSD 2 Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">25GB/256GB</small>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="app-footer">
+        <a href="https://genesisui.com">Prime</a> &copy; 2017 creativeLabs.
+        <span class="float-right">Powered by <a href="https://genesisui.com">GenesisUI</a>
+        </span>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pace.min.js"></script>
+
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="js/Chart.min.js"></script>
+
+
+    <!-- GenesisUI main scripts -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
